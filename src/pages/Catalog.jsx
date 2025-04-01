@@ -65,7 +65,7 @@ export default function Catalog() {
             <h2 className="text-lg font-bold">{car.name}</h2>
             <p>Цена: {car.price.toLocaleString()} ₽</p>
             <p className="flex items-center justify-center text-yellow-500">
-              <Star className="w-6 h-5" /> {car.rating}
+              <Star className="w-6 h-5 fill-amber-400" /> {car.rating}
             </p>
           </motion.div>
         ))}

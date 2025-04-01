@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Catalog from "./pages/Catalog";
 import Contact from "./pages/Contact";
 import About from "./pages/About";

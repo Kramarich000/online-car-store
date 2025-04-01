@@ -24,7 +24,7 @@ export default function Contact() {
             </a>
           </p>
           <p className="flex text-lg items-center justify-center gap-2">
-            <Mail size={18} className="w-5 h-5 text-gray-700" />
+            <Mail size={18} className="w-5 h-5 text-gray-700 transition-all dark:fill-gray-100" />
             <strong>Email:</strong>{" "}
             <a href="mailto:info@autolux.ru" className="text-blue-600">
               info@autolux.ru
@@ -89,7 +89,6 @@ export default function Contact() {
           width="100%"
           height="600"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
     </div>
