@@ -2,9 +2,9 @@
 export default {
   content: [
     './index.html',
-    './src/**/*.{js,jsx,ts,tsx}', // Подключите все ваши компоненты
+    './src/**/*.{js,jsx,ts,tsx}', 
   ],
-  darkMode: 'class', // Включаем поддержку темной темы через класс
+  darkMode: 'class', 
   theme: {
     extend: {},
   },
