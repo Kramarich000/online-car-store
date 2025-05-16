@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 export function useSmoothScroll() {
   useEffect(() => {
@@ -11,7 +11,7 @@ export function useSmoothScroll() {
     function isScrollableElement(element) {
       const style = getComputedStyle(element);
       return (
-        (style.overflowY === "auto" || style.overflowY === "scroll") &&
+        (style.overflowY === 'auto' || style.overflowY === 'scroll') &&
         element.scrollHeight > element.clientHeight
       );
     }
@@ -41,7 +41,7 @@ export function useSmoothScroll() {
 
       targetScroll = Math.min(
         Math.max(0, targetScroll + event.deltaY),
-        document.documentElement.scrollHeight - window.innerHeight
+        document.documentElement.scrollHeight - window.innerHeight,
       );
 
       event.preventDefault();
@@ -66,12 +66,12 @@ export function useSmoothScroll() {
       siteScrollEnabled = true;
     }
 
-    document.addEventListener("wheel", handleWheel);
-    document.addEventListener("wheel", onScroll, { passive: false });
+    document.addEventListener('wheel', handleWheel);
+    document.addEventListener('wheel', onScroll, { passive: false });
 
     return () => {
-      document.removeEventListener("wheel", handleWheel);
-      document.removeEventListener("wheel", onScroll);
+      document.removeEventListener('wheel', handleWheel);
+      document.removeEventListener('wheel', onScroll);
     };
   }, []);
 }

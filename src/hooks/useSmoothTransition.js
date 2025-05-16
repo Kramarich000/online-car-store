@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 export function useSmoothTransition() {
   useEffect(() => {
@@ -8,10 +8,10 @@ export function useSmoothTransition() {
       }, 100);
     };
 
-    document.addEventListener("DOMContentLoaded", handleDOMContentLoaded);
+    document.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
 
     return () => {
-      document.removeEventListener("DOMContentLoaded", handleDOMContentLoaded);
+      document.removeEventListener('DOMContentLoaded', handleDOMContentLoaded);
     };
   }, []);
 }

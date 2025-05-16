@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function Footer() {
   return (
@@ -9,7 +8,7 @@ export default function Footer() {
         <div className="gap-x-5 md:flex hidden justify-center">
           <motion.div
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: 'spring', stiffness: 300 }}
           >
             <Link to="/" className="text-white">
               Главная
@@ -17,7 +16,7 @@ export default function Footer() {
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: 'spring', stiffness: 300 }}
           >
             <Link to="/catalog" className="text-white">
               Каталог
@@ -25,7 +24,7 @@ export default function Footer() {
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: 'spring', stiffness: 300 }}
           >
             <Link to="/contact" className="text-white">
               Контакты
@@ -33,7 +32,7 @@ export default function Footer() {
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: 'spring', stiffness: 300 }}
           >
             <Link to="/about" className="text-white">
               О нас
@@ -45,8 +44,8 @@ export default function Footer() {
           <motion.a
             href="#"
             aria-label="Facebook"
-            whileHover={{ scale: 1.2 }} 
-            transition={{ type: "tween", stiffness: 300 }}
+            whileHover={{ scale: 1.2 }}
+            transition={{ type: 'tween', stiffness: 300 }}
           >
             <i className="fab fa-facebook-f"></i>
           </motion.a>
@@ -55,7 +54,7 @@ export default function Footer() {
             href="#"
             aria-label="X (Twitter)"
             whileHover={{ scale: 1.2 }}
-            transition={{ type: "tween", stiffness: 300 }}
+            transition={{ type: 'tween', stiffness: 300 }}
           >
             <i className="fab fa-twitter"></i>
           </motion.a>
@@ -64,7 +63,7 @@ export default function Footer() {
             href="#"
             aria-label="Instagram"
             whileHover={{ scale: 1.2 }}
-            transition={{ type: "tween", stiffness: 300 }}
+            transition={{ type: 'tween', stiffness: 300 }}
           >
             <i className="fab fa-instagram"></i>
           </motion.a>
@@ -73,20 +72,20 @@ export default function Footer() {
             href="#"
             aria-label="YouTube"
             whileHover={{ scale: 1.2 }}
-            transition={{ type: "tween", stiffness: 300 }}
+            transition={{ type: 'tween', stiffness: 300 }}
           >
             <i className="fab fa-youtube"></i>
           </motion.a>
         </div>
 
         <div className="mt-2">
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
-          <Link to="/privacy" className="text-[20px]">
-            Политика конфиденциальности
-          </Link>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+          >
+            <Link to="/privacy" className="text-[20px]">
+              Политика конфиденциальности
+            </Link>
           </motion.div>
         </div>
       </div>
